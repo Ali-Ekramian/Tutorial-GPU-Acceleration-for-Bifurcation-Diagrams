@@ -12,9 +12,9 @@ We scan over 50,000 values of `r ∈ [2.8, 4.0]`, iterate the map 2,000 times pe
 
 | Version | Description | Runtime (this sample) |
 |---|---|---|
-| **1. CPU loop** | Plain Python `for` loop over every `r`, every iteration | **~ 47 s** |
-| **2. GPU code, run on CPU runtime** | Same `vmap` + `jit` code, but Colab runtime set to CPU | **~ 1 s** |
-| **3. GPU code, run on GPU runtime** | Same code, Colab runtime set to GPU (T4) | **~ 0.03 s** |
+| **1. CPU loop** | Plain Python `for` loop over every `r`, every iteration | ~ 47 s |
+| **2. GPU code, run on CPU runtime** | Same `vmap` + `jit` code, but Colab runtime set to CPU | ~ 1 s |
+| **3. GPU code, run on GPU runtime** | Same code, Colab runtime set to GPU (T4) | ~ 0.03 s |
 
 **Total speedup CPU loop → GPU: ~1,570x**
 
