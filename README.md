@@ -51,4 +51,5 @@ This is why version **3** (GPU code, run on GPU) is another ~30x faster than ver
 ## Takeaway
 
 > **Step 1 — Vectorize your code** (`vmap`/`jit`): this helps a lot, even without a GPU.
+> 
 > **Step 2 — Run it on GPU**: this helps *more*, and the benefit grows with the size of your parameter grid.
